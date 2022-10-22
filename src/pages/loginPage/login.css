@@ -50,18 +50,6 @@
   margin-top: 0, 5rem;
 }
 
-/* button {
-  font-size: 20px;
-  border: none;
-  padding: 15px;
-  width: 40%;
-  border-radius: 20px;
-  color: white;
-  background-color: dodgerblue;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 1s all;
-} */
 
 .btn-login:hover {
   background-color: deepskyblue;
