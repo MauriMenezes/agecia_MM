@@ -1,0 +1,13 @@
+.img-oferta {
+  border-radius: 10px;
+}
+
+main {
+  background-color: rgb(238, 238, 238)
+}
+
+.btn-oferta {
+  width: 25%;
+  margin-top: 8px;
+  background-color: #0074CC !important;
+}

@@ -1,0 +1,12 @@
+.box-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card {
+  box-shadow: 6px 6px 5px #ccc;
+  margin-bottom: 8px;
+}

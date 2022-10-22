@@ -1,0 +1,25 @@
+header {
+  background: linear-gradient(#027ffc, rgb(238, 238, 238));
+  margin: 0px;
+  font-family: 'Handlee', cursive;
+}
+
+.linkHeader {
+  color: white;
+}
+
+.icon {
+  text-align: center;
+}
+
+.box-link {
+  padding: 8px;
+  border-radius: 10px;
+  margin-left: 6px;
+
+}
+
+.box-link:hover {
+
+  box-shadow: 6px 6px 5px #ccc;
+}

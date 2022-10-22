@@ -1,0 +1,14 @@
+#formP {
+
+  background-color: #92c3f5;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#btn-form {
+
+  width: 15%;
+  margin-top: 8px;
+  margin-left: 10px;
+}

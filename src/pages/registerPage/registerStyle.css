@@ -1,0 +1,59 @@
+#reg {
+
+  background-image: linear-gradient(45deg, #00498b, #0bb399);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 2rem;
+
+}
+
+#reg .form {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 480px;
+  padding: 30px;
+  border-radius: 10px;
+
+}
+
+#reg .field {
+  padding-bottom: 0.5rem;
+  color: #fff;
+}
+
+#reg .field label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#reg .field input {
+  width: 100%;
+  padding: 10px;
+  font-size: .9rem;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #323232;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid rgb(200, 200, 200);
+  border-radius: 5px;
+
+
+}
+
+#reg .actions {
+  text-align: center;
+  margin-top: 0, 5rem;
+}
+
+
+
+
+*/ .link {
+  color: #D2B48C;
+}
