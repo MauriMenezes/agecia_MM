@@ -21,7 +21,7 @@ const Register = () => {
   const submit = (e) => {
     e.preventDefault()
     console.log(JSON.stringify(user))
-    fetch('http://localhost:8080/cadastrar', {
+    fetch('https://agencia-viagem-recode.herokuapp.com/cadastrar', {
       method: 'post',
       body: JSON.stringify(user),
       headers: {
