@@ -1,17 +1,16 @@
 #reg {
-
-  background-image: linear-gradient(45deg, #00498b, #0bb399);
+  background: linear-gradient(to top left, #28b487, #7dd56f);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 92.7vh;
   padding: 0 2rem;
 
 }
 
 #reg .form {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(49, 117, 64, 0.3);
   width: 100%;
   max-width: 480px;
   padding: 30px;
@@ -51,9 +50,12 @@
   margin-top: 0, 5rem;
 }
 
-
+.btn-register {
+  width: 100%;
+  font-weight: bold;
+}
 
 
 .link {
-  color: #D2B48C;
+  color: #ffffff;
 }
