@@ -35,7 +35,7 @@ const Pacotes = () => {
               info={"7 diárias"}
               preco={"R$ 2399"}
               quarto={" Quarto"}
-              btn={<Button>comprar</Button>}
+              btn={<Button variant="danger">Comprar</Button>}
             />
             <Cards
               img={"/images/maldives-1993704_1920.jpg"}
@@ -44,7 +44,7 @@ const Pacotes = () => {
               info={"7 diárias"}
               preco={"R$ 2399"}
               quarto={" Quarto"}
-              btn={<Button>comprar</Button>}
+              btn={<Button variant="danger">Comprar</Button>}
             />  <Cards
               img={"/images/maldives-1993704_1920.jpg"}
               titulo={"Barcelona + Palma de Mallorca"}
@@ -52,7 +52,7 @@ const Pacotes = () => {
               info={"7 diárias"}
               preco={"R$ 2399"}
               quarto={" Quarto"}
-              btn={<Button>comprar</Button>}
+              btn={<Button variant="danger">Comprar</Button>}
             />
 
           </Row>
@@ -70,7 +70,7 @@ const Pacotes = () => {
               info={"7 diárias"}
               preco={"R$ 2399"}
               quarto={" Quarto"}
-              btn={<Button>comprar</Button>}
+              btn={<Button variant="danger">Comprar</Button>}
             />
             <Cards
               img={"/images/maldives-1993704_1920.jpg"}
@@ -79,7 +79,7 @@ const Pacotes = () => {
               info={"7 diárias"}
               preco={"R$ 2399"}
               quarto={" Quarto"}
-              btn={<Button>comprar</Button>}
+              btn={<Button variant="danger">Comprar</Button>}
             />  <Cards
               img={"/images/maldives-1993704_1920.jpg"}
               titulo={"Barcelona + Palma de Mallorca"}
@@ -87,7 +87,7 @@ const Pacotes = () => {
               info={"7 diárias"}
               preco={"R$ 2399"}
               quarto={" Quarto"}
-              btn={<Button>comprar</Button>}
+              btn={<Button variant="danger">Comprar</Button>}
             />
           </Row>
           <section>
