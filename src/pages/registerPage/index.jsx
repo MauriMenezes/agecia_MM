@@ -18,22 +18,30 @@ const Register = () => {
     cpf: cpf,
     email: email
   }
-  const submit = (e) => {
+  const submit = async (e) => {
     e.preventDefault()
-    console.log(JSON.stringify(user))
-    fetch('https://agencia-viagem-recode.herokuapp.com/cadastrar', {
-      method: 'post',
-      body: JSON.stringify(user),
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
+    try {
+      const config = {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(user)
       }
-    })
-      .then(retorno => retorno.json())
-      .then(retorno_convertido => {
-        console.log(retorno_convertido);
+      const response = await fetch("https://agencia-viagem-recode.herokuapp.com/cadastrar", config)
+      //const json = await response.json()
+      if (response.ok) {
+        console.log("deu certo")
         navigate("/login")
-      })
+        return response
+      } else {
+        alert("email já cadastrado !")
+      }
+    } catch (error) {
+
+      console.log(error)
+    }
   }
 
   return (
