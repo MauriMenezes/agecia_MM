@@ -12,18 +12,26 @@ const FormPassagem = () => {
 
   const { authenticated, login } = useContext(AuthContext)
   const navigate = useNavigate()
+  const [origem, setOrigem] = useState("")
+  const [destino, setDestino] = useState("")
 
-
-
-  const handleSubmit = () => {
-
+  const handleSubmit = (e) => {
+    e.preventDefault()
     if (authenticated) {
-
       console.log("está logado")
     }
-    navigate("/login")
+    else {
 
+      navigate("/login")
+    }
   }
+
+
+
+  const changeDestino = (e) => {
+    setDestino(e.target.value)
+  }
+
 
   return (
 
@@ -64,33 +72,35 @@ const FormPassagem = () => {
           </Row>
 
 
+
           <Row >
             <Col xs={5} >
-
-              <Form.Select className="mb-1">
+              <Form.Select className="mb-1" onChange={(e) => setOrigem(e.target.value)}>
                 <option>ORIGEM</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="1">BAHIA</option>
+                <option value="2">SÃO PAULO</option>
+                <option value="3">RECIFE</option>
               </Form.Select>
 
-              <Form.Select aria-label="Default select example">
+              <Form.Select aria-label="Default select example" onChange={(e) => setDestino(e.target.value)}>
                 <option>DESTINO</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="1">BAHIA</option>
+                <option value="2">SÃO PAULO</option>
+                <option value="3">RECIFE</option>
               </Form.Select>
 
             </Col>
 
             <Col xs={6}>
-              <Form.Group controlId="duedate" className="mb-1">
+              <Form.Group
+                className="mb-1">
                 <Form.Control
                   placeholder="Date" type="date"
                 />
               </Form.Group>
 
-              <Form.Group controlId="duedate">
+              <Form.Group
+              >
                 <Form.Control
                   type="date"
                   name="duedate"
