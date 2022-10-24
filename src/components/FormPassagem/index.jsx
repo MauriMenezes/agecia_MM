@@ -22,22 +22,24 @@ const FormPassagem = () => {
     e.preventDefault()
     if (authenticated) {
       console.log("está logado")
-      alert("OLHE O CONSOLE !!!")
 
-      fetch(`http://localhost:8080/escala/listar/${origem} `)
+      fetch(`https://agencia-viagem-recode.herokuapp.com/escala/listar/${origem}`)
 
         .then(retorno => retorno.json())
         .then(retorno_convertido => setEscalas(retorno_convertido))
 
 
+
+
+      alert("OLHE O CONSOLE !!!")
     }
     else {
 
       navigate("/login")
     }
+    console.log(escalas)
   }
 
-  console.log(escalas)
 
 
   const changeDestino = (e) => {
@@ -83,7 +85,7 @@ const FormPassagem = () => {
 
           </Row>
           <Row >
-            {origem}
+
             <Col xs={5} >
               <Form.Select className="mb-1" onChange={(e) => setOrigem(e.target.value)}>
                 <option>ORIGEM</option>
