@@ -14,11 +14,22 @@ const FormPassagem = () => {
   const navigate = useNavigate()
   const [origem, setOrigem] = useState("")
   const [destino, setDestino] = useState("")
+  const [escalas, setEscalas] = useState([])
+
+
 
   const handleSubmit = (e) => {
     e.preventDefault()
     if (authenticated) {
       console.log("está logado")
+      alert("OLHE O CONSOLE !!!")
+
+      fetch(`http://localhost:8080/escala/listar/${origem} `)
+
+        .then(retorno => retorno.json())
+        .then(retorno_convertido => setEscalas(retorno_convertido))
+
+
     }
     else {
 
@@ -26,6 +37,7 @@ const FormPassagem = () => {
     }
   }
 
+  console.log(escalas)
 
 
   const changeDestino = (e) => {
@@ -70,23 +82,21 @@ const FormPassagem = () => {
 
 
           </Row>
-
-
-
           <Row >
+            {origem}
             <Col xs={5} >
               <Form.Select className="mb-1" onChange={(e) => setOrigem(e.target.value)}>
                 <option>ORIGEM</option>
-                <option value="1">BAHIA</option>
-                <option value="2">SÃO PAULO</option>
-                <option value="3">RECIFE</option>
+                <option value="Salvador">Salvador</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Recife">Recife</option>
               </Form.Select>
 
               <Form.Select aria-label="Default select example" onChange={(e) => setDestino(e.target.value)}>
                 <option>DESTINO</option>
-                <option value="1">BAHIA</option>
-                <option value="2">SÃO PAULO</option>
-                <option value="3">RECIFE</option>
+                <option value="Salvador">Salvador</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Recife">Recife</option>
               </Form.Select>
 
             </Col>

@@ -10,49 +10,32 @@ import Ofertas from './pages/Ofertas';
 import Contato from './pages/Contato';
 
 const AppRoutes = () => {
-
   const Private = ({ children }) => {
-
     const { authenticated, loading } = useContext(AuthContext)
-
     if (loading) {
-
       return <div>Carregando...</div>
     }
-
     if (!authenticated) {
       return <Navigate to="/login" />
     }
     return children
-
   }
-
   return (
-
     <Router>
       <AuthProvider >
         <Routes>
-
-
           <Route
             exact path='/'
             element={
-
               <Home />
-
             } >
           </Route>
-
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
           <Route path='/destino' element={<Destino />} />
           <Route path='/pacotes' element={<Pacotes />} />
           <Route path='/ofertas' element={<Ofertas />} />
           <Route path='/contato' element={<Contato />} />
-
-
-
-
         </Routes>
       </AuthProvider>
     </Router>
