@@ -23,3 +23,8 @@ header {
 
   box-shadow: 6px 6px 5px #ccc;
 }
+
+.btn-logOut {
+
+  margin: 10px;
+}
