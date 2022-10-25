@@ -11,7 +11,9 @@ const Footer = () => {
       <Navbar className="p-2 footer"  >
         <Container fluid >
           <Row>
-            <img src="/images/GitHub-Mark-Light-32px.png" width="30px" ></img>
+            <a href="https://github.com/MauriMenezes">
+              <img src="/images/GitHub-Mark-Light-32px.png" width="30px" ></img>
+            </a>
 
           </Row>
         </Container>
