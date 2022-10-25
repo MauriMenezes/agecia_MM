@@ -27,26 +27,14 @@ const FormPassagem = () => {
 
         .then(retorno => retorno.json())
         .then(retorno_convertido => setEscalas(retorno_convertido))
-
-
-
-
       alert("OLHE O CONSOLE !!!")
+      console.log(escalas)
     }
     else {
 
       navigate("/login")
     }
-    console.log(escalas)
   }
-
-
-
-  const changeDestino = (e) => {
-    setDestino(e.target.value)
-  }
-
-
   return (
 
     <>
